@@ -1,4 +1,11 @@
-﻿MC.Views.PlaceSearchInput = Backbone.View.extend({
+﻿// Usage:
+// var v = new MC.Views.PlaceSearchInput({ el: $('input') });
+// v.on('select', function (item) {
+//   // Note that 'item' is the actual object returned by the google.maps.Geocoder.
+//    console.log(item);
+// });
+
+MC.Views.PlaceSearchInput = Backbone.View.extend({
     initialize: function () {
 
         this.geocoder = new google.maps.Geocoder();
